@@ -1,5 +1,5 @@
 # Device
-git clone https://github.com/Evolution-X-Devices/vendor_xiaomi_miatoll.git vendor/xiaomi/miatoll
+git clone https://github.com/Evolution-X-Devices/vendor_xiaomi_miatoll.git -b cnb vendor/xiaomi/miatoll
 
 # Kernel
 git clone https://github.com/Aciss21/kernel_xiaomi_sm6250.git kernel/xiaomi/sm6250 --depth 1
