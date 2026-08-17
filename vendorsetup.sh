@@ -1,8 +1,8 @@
 # Device
-git clone https://github.com/Shadowwisperia/android_vendor_xiaomi_miatoll vendor/xiaomi/miatoll
+git clone https://github.com/Shadowwisperia/android_vendor_xiaomi_miatoll.git -b main vendor/xiaomi/miatoll
 
 # Kernel
-git clone https://github.com/Aciss21/kernel_xiaomi_sm6250.git kernel/xiaomi/sm6250 --depth 1
+git clone https://github.com/pokji18/kernel_xiaomi_sm6250.git -b lineage-24 kernel/xiaomi/sm6250 --depth 1
 
 # Miui camera
 git clone https://github.com/kardebayan/android_vendor_xiaomi_miuicamera-miatoll.git vendor/xiaomi/miuicamera-miatoll
