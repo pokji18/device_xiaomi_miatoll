@@ -15,6 +15,10 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Inherit from Dolby Atmos
 $(call inherit-product, vendor/sony/dolby/sonydolby.mk)
 
+# SurfaceFlinger
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,60)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -376,3 +380,6 @@ $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
 # Miui-Camera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-miatoll/device.mk)
+
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
