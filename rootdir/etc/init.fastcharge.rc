@@ -1,0 +1,8 @@
+on property:sys.boot_completed=1
+    # Mengizinkan arus maksimal untuk fast charging (3000mA / 3A)
+    write /sys/class/power_supply/battery/constant_charge_current_max 3000000
+    write /sys/class/power_supply/battery/input_current_limit 3000000
+    write /sys/class/power_supply/usb/current_max 3000000
+    
+    # Menonaktifkan limitasi charging dari Qualcomm
+    write /sys/class/qcom-battery/restricted_charging 0

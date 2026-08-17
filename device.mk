@@ -383,3 +383,11 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-miatoll/device.mk)
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# Fast Charge Script
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/etc/init.fastcharge.rc:system/etc/init/init.fastcharge.rc
+
+# Fast Charge Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.quick.charge=1 \
+    ro.charger.enable_suspend=1
